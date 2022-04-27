@@ -10,32 +10,12 @@ body {
   text-align: center;
   font-size: 1.5vw;
   font-family: "sans-serif";
-  height: 100vh;
-}
-
-.ul-navbar {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin: 4%;
-}
-.ul-navbar li {
-  padding: 2.3vw;
-}
-.ul-navbar :link {
-  text-decoration: none;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 2vw;
-  font-weight: bold;
-  color: rgb(148, 207, 247);
-  letter-spacing: 0.2vw;
+  margin: 24px;
 }
 
 .footer {
   background-image: linear-gradient(20deg, rgb(148, 207, 247) 0%, rgb(4, 76, 243) 50%, rgb(148, 207, 247) 100%);
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -44,4 +24,188 @@ body {
   font-size: 1.2vw;
   padding: 2vw;
   letter-spacing: 0.3vw;
+}
+
+.homeContainer {
+  position: relative;
+  display: inline-block;
+}
+.homeContainer .title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.8vw;
+  font-weight: bold;
+  color: rgb(148, 207, 247);
+  margin: 30px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+}
+.home .introtext {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2vw;
+  line-height: 2vw;
+  padding: 20px;
+  text-align: start;
+}
+.home .introtext .textcolor {
+  text-shadow: 3px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: rgb(4, 76, 243);
+          text-decoration-color: rgb(4, 76, 243);
+}
+.home .foto-home {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  width: 25vw;
+  padding: 0.2vw;
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 150px;
+  margin: 20px;
+  position: relative;
+  letter-spacing: -1.2vw;
+}
+.navbar li {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.8vw;
+  font-weight: bold;
+  color: rgb(148, 207, 247);
+}
+.navbar li :hover {
+  cursor: pointer;
+  background-color: rgb(221, 221, 236) !important;
+  transform: scale(2);
+  color: rgb(4, 76, 243);
+  letter-spacing: -0.5vw;
+  font-size: 1.2vw;
+}
+.navbar a:-webkit-any-link {
+  text-decoration: none;
+}
+.navbar .circle {
+  border-radius: 50%;
+  height: 3vw;
+  width: 3vw;
+  background-color: rgb(4, 4, 230);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .dropbal {
+  -webkit-animation-name: dropbal;
+          animation-name: dropbal;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  letter-spacing: normal;
+  transform: translateY(75px);
+  background-color: transparent;
+  color: rgb(4, 4, 230);
+}
+.navbar .upbal {
+  -webkit-animation-name: upbal;
+          animation-name: upbal;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes dropbal {
+  0% {
+    background-color: rgb(221, 221, 236);
+    transform: translateY(0px);
+    letter-spacing: -1.2vw;
+  }
+  30% {
+    background-color: rgba(4, 4, 230, 0.8);
+  }
+  50% {
+    background-color: transparent;
+  }
+  90% {
+    letter-spacing: normal;
+  }
+  100% {
+    transform: translateY(75px);
+  }
+}
+
+@keyframes dropbal {
+  0% {
+    background-color: rgb(221, 221, 236);
+    transform: translateY(0px);
+    letter-spacing: -1.2vw;
+  }
+  30% {
+    background-color: rgba(4, 4, 230, 0.8);
+  }
+  50% {
+    background-color: transparent;
+  }
+  90% {
+    letter-spacing: normal;
+  }
+  100% {
+    transform: translateY(75px);
+  }
+}
+@-webkit-keyframes upbal {
+  0% {
+    transform: translateY(75px);
+    letter-spacing: normal;
+    background-color: transparent;
+  }
+  100% {
+    letter-spacing: -1.2vw;
+    background-color: rgb(4, 4, 230);
+  }
+}
+@keyframes upbal {
+  0% {
+    transform: translateY(75px);
+    letter-spacing: normal;
+    background-color: transparent;
+  }
+  100% {
+    letter-spacing: -1.2vw;
+    background-color: rgb(4, 4, 230);
+  }
+}
+.projectlist {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projectlist li {
+  border: 3px solid rgb(4, 76, 243);
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  width: 45vw;
+}
+.projectlist li .listitems {
+  display: grid;
+  list-style-type: none;
+  justify-content: center;
+}
+.projectlist li .listitems li {
+  width: 35vw;
+  border-color: rgb(148, 207, 247);
+}
+.projectlist li .listitems a {
+  text-decoration: none;
+  color: rgb(4, 76, 243);
+  align-self: start;
+}
+.projectlist li .listitems a :hover {
+  color: aqua;
 }/*# sourceMappingURL=app.css.map */

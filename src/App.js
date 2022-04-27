@@ -13,7 +13,7 @@ function App() {
   <BrowserRouter >
 
       <Header />
-     <h1>Hello: zie tutorial react oefening om ideeën</h1>
+  
     
      <Routes>
      <Route path="/" element={<Home/>} />

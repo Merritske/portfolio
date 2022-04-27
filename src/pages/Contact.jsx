@@ -1,6 +1,8 @@
 import React from 'react'
 
 function Contact() {
+
+
   return (
     <div>
         <h1>
@@ -8,8 +10,12 @@ function Contact() {
     <a href='mailto: merritske@gmail.com'> mail mij</a>
             <br />
             motivatiebrief
+
             <br />
-            cv
+
+      
+             cv 
+          
         </h1>
     </div>
   )

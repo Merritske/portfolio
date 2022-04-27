@@ -8,25 +8,28 @@ $textcolor: rgb(200, 200, 223);
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin: 4%;
+    // margin: 4%;
 }
-
-;
 
 @mixin navbartext {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2vw;
+    font-size: 1.8vw;
     font-weight: bold;
     color: $color;
-    letter-spacing: 0.2vw;
 }
+
+@mixin text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2vw;
+    line-height: 2vw;
+}
+
 
 * {
     color: $textcolor;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -34,26 +37,12 @@ body {
     text-align: center;
     font-size: 1.5vw;
     font-family: "sans-serif";
-
-    height: 100vh;
-}
-
-.ul-navbar {
-    @include list;
-
-    li {
-        padding: 2.3vw;
-    }
-
-    :link {
-        text-decoration: none;
-        @include navbartext();
-    }
+    margin: 24px
 }
 
 .footer {
     background-image: linear-gradient(20deg, rgb(148, 207, 247) 0%, rgb(4, 76, 243) 50%, rgb(148, 207, 247) 100%);
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 
@@ -62,5 +51,169 @@ body {
         font-size: 1.2vw;
         padding: 2vw;
         letter-spacing: 0.3vw;
+    }
+}
+
+.homeContainer {
+    position: relative;
+display: inline-block;
+   .title {
+        @include navbartext();
+       margin: 30px;
+    }
+}
+
+.home {
+    display: flex;
+align-items: center;
+
+    .introtext {
+        @include text();
+        padding: 20px;
+        text-align: start;
+ 
+ 
+        .textcolor {
+            text-shadow: 3px;
+            text-decoration-line: underline;
+            text-decoration-color: $bgColor;
+        }
+    }
+
+    .foto-home {
+        object-fit: scale-down;
+        
+ width: 25vw;
+        padding: 0.2vw;
+    }
+}
+
+.navbar {
+    @include list;
+    height: 150px;
+    margin: 20px;
+    position: relative;
+    letter-spacing: -1.2vw;
+
+    li {
+
+        @include navbartext();
+
+        :hover {
+            cursor: pointer;
+            background-color: rgb(221, 221, 236) !important;
+            transform: scale(2);
+            color: $bgColor;
+            letter-spacing: -0.5vw;
+            font-size: 1.2vw;
+        }
+
+    }
+
+    a:-webkit-any-link {
+        text-decoration: none;
+
+    }
+
+    .circle {
+        border-radius: 50%;
+        height: 3vw;
+        width: 3vw;
+        background-color: rgb(4, 4, 230);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dropbal {
+        animation-name: dropbal;
+        animation-duration: 3s;
+        letter-spacing: normal;
+        transform: translateY(75px);
+        background-color: transparent;
+color: rgb(4,4,230);
+
+    }
+
+    .upbal {
+        animation-name: upbal;
+        animation-duration: 2s;
+
+    }
+}
+
+
+@keyframes dropbal {
+    0% {
+        background-color: rgb(221, 221, 236) ;
+        transform: translateY(0px);
+        letter-spacing: -1.2vw;
+     
+    }
+
+    30% {
+        background-color: rgba(4, 4, 230, 0.8);
+    }
+
+    50% {
+        background-color: transparent;
+      
+    }
+
+    90% {
+     
+        letter-spacing: normal;
+    }
+    100%{
+           transform: translateY(75px);
+    }
+}
+
+
+@keyframes upbal {
+    0% {
+
+        transform: translateY(75px);
+        letter-spacing: normal;
+        background-color: transparent;
+    }
+
+    100% {
+        letter-spacing: -1.2vw;
+        background-color: rgb(4, 4, 230);
+    }
+}
+.projectlist{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li{
+        border: 3px solid $bgColor;
+        border-radius: 5px;
+        margin: 20px;
+        padding: 20px;
+        width: 45vw;
+        .listitems{
+           display: grid;
+           list-style-type: none;
+   justify-content: center;
+ li{
+      width: 35vw;
+   border-color: $color;
+     
+ }
+            a{ 
+                  text-decoration: none; 
+                  color: $bgColor ;
+                     align-self: start; 
+                 :hover{
+              color: aqua;
+          
+      }   
+            }
+         
+        }
     }
 }
