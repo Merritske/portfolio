@@ -40,6 +40,7 @@ body {
     margin: 24px
 }
 
+//FOOTER
 .footer {
     background-image: linear-gradient(20deg, rgb(148, 207, 247) 0%, rgb(4, 76, 243) 50%, rgb(148, 207, 247) 100%);
     position: relative;
@@ -54,25 +55,27 @@ body {
     }
 }
 
+//HOME
 .homeContainer {
     position: relative;
-display: inline-block;
-   .title {
+    display: inline-block;
+    height: 700px;
+
+    .title {
         @include navbartext();
-       margin: 30px;
+        margin: 30px;
     }
 }
 
 .home {
     display: flex;
-align-items: center;
+    align-items: center;
 
     .introtext {
         @include text();
         padding: 20px;
         text-align: start;
- 
- 
+
         .textcolor {
             text-shadow: 3px;
             text-decoration-line: underline;
@@ -82,12 +85,13 @@ align-items: center;
 
     .foto-home {
         object-fit: scale-down;
-        
- width: 25vw;
+
+        width: 25vw;
         padding: 0.2vw;
     }
 }
 
+//HEADER
 .navbar {
     @include list;
     height: 150px;
@@ -96,7 +100,6 @@ align-items: center;
     letter-spacing: -1.2vw;
 
     li {
-
         @include navbartext();
 
         :hover {
@@ -107,7 +110,6 @@ align-items: center;
             letter-spacing: -0.5vw;
             font-size: 1.2vw;
         }
-
     }
 
     a:-webkit-any-link {
@@ -132,24 +134,21 @@ align-items: center;
         letter-spacing: normal;
         transform: translateY(75px);
         background-color: transparent;
-color: rgb(4,4,230);
+        color: rgb(4, 4, 230);
 
     }
 
     .upbal {
         animation-name: upbal;
         animation-duration: 2s;
-
     }
 }
 
-
 @keyframes dropbal {
     0% {
-        background-color: rgb(221, 221, 236) ;
+        background-color: rgb(221, 221, 236);
         transform: translateY(0px);
         letter-spacing: -1.2vw;
-     
     }
 
     30% {
@@ -158,15 +157,14 @@ color: rgb(4,4,230);
 
     50% {
         background-color: transparent;
-      
     }
 
     90% {
-     
         letter-spacing: normal;
     }
-    100%{
-           transform: translateY(75px);
+
+    100% {
+        transform: translateY(75px);
     }
 }
 
@@ -184,36 +182,43 @@ color: rgb(4,4,230);
         background-color: rgb(4, 4, 230);
     }
 }
-.projectlist{
+
+//PROJECTS
+.projectlist {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    li{
+
+    li {
         border: 3px solid $bgColor;
         border-radius: 5px;
         margin: 20px;
         padding: 20px;
         width: 45vw;
-        .listitems{
-           display: grid;
-           list-style-type: none;
-   justify-content: center;
- li{
-      width: 35vw;
-   border-color: $color;
-     
- }
-            a{ 
-                  text-decoration: none; 
-                  color: $bgColor ;
-                     align-self: start; 
-                 :hover{
-              color: aqua;
-          
-      }   
+
+        .listitems {
+            display: grid;
+            list-style-type: none;
+            justify-content: center;
+
+            li {
+                width: 35vw;
+                border-color: $color;
+
             }
-         
+
+            a {
+                text-decoration: none;
+                color: $bgColor;
+                align-self: start;
+
+                :hover {
+                    color: aqua;
+
+                }
+            }
+
         }
     }
 }

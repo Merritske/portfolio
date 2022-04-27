@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 function Projects() {
   return (
     <div>
+ "under construction" maar je kan al wel een glimp opvangen van enkele projecten
         <h1>Projecten opgedeeld per onderdeel</h1>
         <ul className='projectlist'>
             <li>
