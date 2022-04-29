@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function Header() {
+    
     const[animate, setAnimate] = useState(true)
     let circle = document.getElementsByClassName("circle") 
 
