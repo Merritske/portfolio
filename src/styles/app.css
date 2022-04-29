@@ -13,6 +13,12 @@ body {
   margin: 24px;
 }
 
+.music {
+  position: absolute;
+  right: -10px;
+  margin: 30px;
+}
+
 .footer {
   background-image: linear-gradient(20deg, rgb(148, 207, 247) 0%, rgb(4, 76, 243) 50%, rgb(148, 207, 247) 100%);
   position: relative;
@@ -45,7 +51,8 @@ body {
 }
 .home .introtext {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 1.2vw;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
   line-height: 2vw;
   padding: 20px;
   text-align: start;
@@ -70,10 +77,13 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 150px;
+  height: 7.5rem;
   margin: 20px;
+  margin-bottom: 5rem;
   position: relative;
   letter-spacing: -1.2vw;
+  background-color: rgba(4, 4, 230, 0.2);
+  border-radius: 20px;
 }
 .navbar li {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -83,11 +93,8 @@ body {
 }
 .navbar li :hover {
   cursor: pointer;
-  background-color: rgb(221, 221, 236) !important;
-  transform: scale(2);
-  color: rgb(4, 76, 243);
   letter-spacing: -0.5vw;
-  font-size: 1.2vw;
+  font-size: 1.5rem;
 }
 .navbar a:-webkit-any-link {
   text-decoration: none;
@@ -209,4 +216,8 @@ body {
 }
 .projectlist li .listitems a :hover {
   color: aqua;
+}
+
+div > div.react-pdf__Page__textContent {
+  visibility: hidden;
 }/*# sourceMappingURL=app.css.map */

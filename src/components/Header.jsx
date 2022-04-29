@@ -27,7 +27,9 @@ setAnimate(true)
   return (
     <div>
         <ul className='navbar'>
-        <li>
+        
+
+ <li>
         
                 <Link to="/" className='linktext'><div className="circle" onClick={transform}> HOME </div></Link>
        
@@ -48,7 +50,11 @@ setAnimate(true)
                 <Link to="/about">  <div className="circle" onClick={transform}> EXTRA'S  </div> </Link>
               
             </li>
+
+       
+       
         </ul>
+      
     </div>
   )
 }

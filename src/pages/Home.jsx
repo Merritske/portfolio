@@ -2,7 +2,7 @@ import React from 'react'
 import foto from "../Images/love.jpg"
 import foto2 from "../Images/atomium.jpg"
 import foto3 from "../Images/viaduct Vilvoorde.jpg"
-
+import sound from "../music/Hey Man.mp3"
 function Home() {
 
 
@@ -24,6 +24,8 @@ function Home() {
 
   return (
 <div className='homeContainer'>
+
+
 
   
         <h1 className='title'>  Welcome op de homepage van An Verbeeck</h1> 
@@ -48,14 +50,14 @@ function Home() {
    {/* <img src={foto3} className="foto-home" /> */}
   <img src={foto2} className="foto-home" />
 
-
    </div>
-
-
-      
-
  </div>
-   
+ <div className='music'>
+    <audio controls autoPlay loop>
+            <source src={sound} type="audio/mp3" />
+        </audio>
+    <h5>muziek : Hey man, Eels </h5>
+ </div>
     
     </div>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import sound from '../music/dvorak.mp3'
 
 function Projects() {
   return (
@@ -47,6 +48,13 @@ function Projects() {
               </h2>
            </li>
         </ul>
+        <div className='music'>
+           <audio controls autoPlay >
+            <source src={sound} type="audio/mp3" />
+        </audio>
+        <h5>muziek: De nieuwe wereld symfonie (allegro con fuoco): Antonin Dvorak</h5>
+        </div>
+        
     </div>
   )
 }

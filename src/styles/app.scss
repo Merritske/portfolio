@@ -20,7 +20,8 @@ $textcolor: rgb(200, 200, 223);
 
 @mixin text {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.2vw;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
     line-height: 2vw;
 }
 
@@ -39,7 +40,11 @@ body {
     font-family: "sans-serif";
     margin: 24px
 }
-
+.music{
+    position: absolute;
+    right: -10px;
+    margin: 30px;
+}
 //FOOTER
 .footer {
     background-image: linear-gradient(20deg, rgb(148, 207, 247) 0%, rgb(4, 76, 243) 50%, rgb(148, 207, 247) 100%);
@@ -94,21 +99,21 @@ body {
 //HEADER
 .navbar {
     @include list;
-    height: 150px;
+    height: 7.5rem;
     margin: 20px;
+    margin-bottom: 5rem;
     position: relative;
     letter-spacing: -1.2vw;
-
+background-color:    rgba(4, 4, 230, 0.2);
+border-radius: 20px;
     li {
         @include navbartext();
 
         :hover {
             cursor: pointer;
-            background-color: rgb(221, 221, 236) !important;
-            transform: scale(2);
-            color: $bgColor;
+         
             letter-spacing: -0.5vw;
-            font-size: 1.2vw;
+            font-size: 1.5rem;
         }
     }
 
@@ -221,4 +226,8 @@ body {
 
         }
     }
+}
+//CONTACT
+ div > div.react-pdf__Page__textContent{
+    visibility: hidden;
 }
