@@ -1,6 +1,7 @@
 $bgColor: rgb(4, 76, 243);
 $color: rgb(148, 207, 247);
 $textcolor: rgb(200, 200, 223);
+$donker: rgb(0,0,150);
 
 @mixin list {
     list-style-type: none;
@@ -8,23 +9,27 @@ $textcolor: rgb(200, 200, 223);
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    // margin: 4%;
 }
 
 @mixin navbartext {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.8vw;
+    font-size: 2.5vw;
     font-weight: bold;
     color: $color;
 }
 
 @mixin text {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
-    line-height: 2vw;
+    font-size: 1.8vw;
+    letter-spacing: 0.1em;
+    line-height: 1.4em;
 }
 
+@mixin container{
+    position: relative;
+    display: inline-block;
+    margin-top: 3vw;
+}
 
 * {
     color: $textcolor;
@@ -36,92 +41,39 @@ $textcolor: rgb(200, 200, 223);
 body {
     background-image: linear-gradient(20deg, rgb(148, 207, 247) 10%, rgb(4, 76, 243) 100%);
     text-align: center;
-    font-size: 1.5vw;
     font-family: "sans-serif";
-    margin: 24px
+    margin: 2.8vw
 }
 .music{
-    position: absolute;
-    right: -10px;
-    margin: 30px;
+    z-index: -1 !important;
+       margin: 3vw;
+       audio{
+           height: 2.8vw;
+       }
+       h5{
+           font-size: 1.5vw;
+       }
 }
-//FOOTER
-.footer {
-    background-image: linear-gradient(20deg, rgb(148, 207, 247) 0%, rgb(4, 76, 243) 50%, rgb(148, 207, 247) 100%);
-    position: relative;
-    bottom: 0;
-    width: 100%;
-
-    h3 {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.2vw;
-        padding: 2vw;
-        letter-spacing: 0.3vw;
-    }
-}
-
-//HOME
-.homeContainer {
-    position: relative;
-    display: inline-block;
-    height: 700px;
-
-    .title {
-        @include navbartext();
-        margin: 30px;
-    }
-}
-
-.home {
-    display: flex;
-    align-items: center;
-
-    .introtext {
-        @include text();
-        padding: 20px;
-        text-align: start;
-
-        .textcolor {
-            text-shadow: 3px;
-            text-decoration-line: underline;
-            text-decoration-color: $bgColor;
-        }
-    }
-
-    .foto-home {
-        object-fit: scale-down;
-
-        width: 25vw;
-        padding: 0.2vw;
-    }
-}
-
 //HEADER
 .navbar {
     @include list;
-    height: 7.5rem;
-    margin: 20px;
-    margin-bottom: 5rem;
+    height: 5.2vw;
+    margin: 2vw;
     position: relative;
     letter-spacing: -1.2vw;
 background-color:    rgba(4, 4, 230, 0.2);
-border-radius: 20px;
+border-radius: 50% ;
     li {
         @include navbartext();
-
         :hover {
             cursor: pointer;
-         
             letter-spacing: -0.5vw;
-            font-size: 1.5rem;
+            font-size: 1.3vw;
         }
     }
-
     a:-webkit-any-link {
         text-decoration: none;
-
     }
-
     .circle {
         border-radius: 50%;
         height: 3vw;
@@ -132,68 +84,246 @@ border-radius: 20px;
         justify-content: center;
         align-items: center;
     }
-
     .dropbal {
         animation-name: dropbal;
         animation-duration: 3s;
         letter-spacing: normal;
-        transform: translateY(75px);
+        transform: translateY(4vw);
         background-color: transparent;
-        color: rgb(4, 4, 230);
-
+        color: $donker;
     }
-
     .upbal {
         animation-name: upbal;
         animation-duration: 2s;
     }
 }
-
 @keyframes dropbal {
     0% {
         background-color: rgb(221, 221, 236);
-        transform: translateY(0px);
+        transform: translateY(0vw);
         letter-spacing: -1.2vw;
+        color: $color;
     }
-
     30% {
         background-color: rgba(4, 4, 230, 0.8);
     }
-
     50% {
         background-color: transparent;
     }
-
     90% {
         letter-spacing: normal;
     }
-
     100% {
-        transform: translateY(75px);
+        transform: translateY(4vw);
+        color: $donker;
     }
 }
-
 
 @keyframes upbal {
     0% {
-
-        transform: translateY(75px);
+        transform: translateY(4vw);
         letter-spacing: normal;
         background-color: transparent;
+        color: $donker;
     }
-
     100% {
         letter-spacing: -1.2vw;
         background-color: rgb(4, 4, 230);
+        color: $color;
+    }
+}
+//FOOTER
+.footer {
+    background-image: linear-gradient(20deg, rgb(148, 207, 247) 0%, rgb(4, 76, 243) 50%, rgb(148, 207, 247) 100%);
+    width: 100%;
+
+    h3 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.3vw;
+        padding: 1.5vw;
+        letter-spacing: 0.3vw;
     }
 }
 
+//HOME
+.homeContainer {
+  @include container;
+    .title {
+        @include navbartext(); 
+    }
+    .home {
+    display: flex;
+    align-items: center;
+    .introtext {
+        @include text();
+        padding: 1.5vw;
+        text-align: start;
+        .textcolor {
+            text-decoration-line: underline;
+            text-decoration-color: $bgColor;
+ }
+ }
+    .foto-home {
+        object-fit: scale-down;
+        width: 30vw;
+        padding: 0.2vw;
+    }
+}
+}
+
+
 //PROJECTS
+.honeycomb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    transform: translateY(34.375px);
+}
+
+.honeycomb-cell {
+    flex: 0 1 1250px;
+    max-width: 250px;
+    height: 137.5px;
+    margin: 50px 25px 95px;
+    position: relative;
+    padding: 0.5em;
+    text-align: center;
+    z-index: 1;
+}
+
+.honeycomb-cell__title {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    hyphens: auto;
+    word-break: break-word;
+    text-transform: uppercase;
+    color: $color;
+    font-weight: 700;
+    font-size: 1.75em;
+    transition: opacity 350ms;
+}
+.honeycomb-cell__title>small {
+    font-weight: 300;
+    margin-top: 0.25em;
+}
+
+.honeycomb-cell__image {
+    object-fit: cover;
+    object-position: center;
+}
+
+.honeycomb-cell::before,
+.honeycomb-cell::after {
+    content: "";
+}
+
+.honeycomb-cell::before,
+.honeycomb-cell::after,
+.honeycomb-cell__image {
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    display: block;
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    z-index: -1;
+}
+
+.honeycomb-cell::before {
+    background: #0919a1;
+    transform: scale(1.055);
+}
+
+.honeycomb-cell::after {
+    background: $bgColor;
+    opacity: 0.5;
+    transition: opacity 350ms;
+}
+
+.honeycomb-cell:hover .honeycomb-cell__title {
+    opacity: 0.4;
+
+}
+.honeycomb-cell:hover{
+    transform: matrix(2, 0, 0, 2, 0, 50);
+    z-index: 5;
+}
+
+.honeycomb-cell:hover::after {
+    opacity: 0;
+
+}
+
+
+// @media (max-width: 550px) {
+//     .honeycomb-cell {
+//         margin: 81.25px 25px;
+//     }
+// }
+
+// @media (min-width: 550px) and (max-width: 825px) {
+//     .honeycomb-cell {
+//         margin: 81px 25px;
+//     }
+
+//     .honeycomb-cell:nth-child(4n),  .honeycomb-cell:nth-child(5n){
+//         margin: 81px 25px;
+//     }
+// }
+
+// @media (min-width: 825px) and (max-width: 1100px) {
+//     .honeycomb-cell:nth-child(5n+4) {
+//         margin-left: calc(50% - 275px);
+//     }
+
+//     .honeycomb-cell:nth-child(5n+5) {
+//         margin-right: calc(50% - 275px);
+//     }
+
+//     .honeycomb__placeholder:nth-child(5n),
+//     .honeycomb__placeholder:nth-child(5n+3) {
+//         display: block;
+//     }
+// }
+
+// @media (min-width: 1100px) {
+//     .honeycomb-cell:nth-child(7n+5) {
+//         margin-left: calc(50% - 400px);
+//     }
+
+//     .honeycomb-cell:nth-child(7n+7),
+//     .honeycomb-cell:nth-child(7n+5):nth-last-child(2) {
+//         margin-right: calc(50% - 400px);
+//     }
+
+//     .honeycomb__placeholder:nth-child(7n+7),
+//     .honeycomb__placeholder:nth-child(7n+9),
+//     .honeycomb__placeholder:nth-child(7n+11) {
+//         display: block;
+//     }
+// }
+
+// @media only screen and (max-width: 600px) {
+
+
+// }
+.projectcontainer{
+@include container;
+}
 .projectlist {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 
     li {
         border: 3px solid $bgColor;
@@ -228,6 +358,7 @@ border-radius: 20px;
     }
 }
 //CONTACT
- div > div.react-pdf__Page__textContent{
+
+#root > div.contact > div:nth-child(4) > div:nth-child(2) > div > div.react-pdf__Page__textContent{
     visibility: hidden;
 }

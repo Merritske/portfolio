@@ -32,9 +32,9 @@ function Contact() {
             </div>
        
            <div className='music'>
-                   <audio   controls autoPlay >
-            <source src={sound} type="audio/mp3" />
-        </audio>
+                 <audio   controls autoPlay >
+                     <source src={sound} type="audio/mp3" />
+        </audio>  
 <h5>muziek : Don't stop me now : Queen</h5>
         </div>
 

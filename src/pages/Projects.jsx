@@ -1,23 +1,60 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
 import sound from '../music/dvorak.mp3'
+import todo from '../Images/todo.jpg'
+import rekengame from '../Images/rekengame.jpg'
+import panda from '../Images/moviebootstrap.jpg'
+import card from '../Images/cards.jpg'
 
 function Projects() {
+const [htmlSection, setHtmlSection] = useState(false)
+function htmlcss(){
+setHtmlSection(true)
+}
+
+
+
+
   return (
-    <div>
+    <div className='projectcontainer'>
  "under construction" maar je kan al wel een glimp opvangen van enkele projecten
         <h1>Projecten opgedeeld per onderdeel</h1>
-        <ul className='projectlist'>
-            <li>
+        <ul className="honeycomb" >
+    <li className="honeycomb-cell" onClick={htmlcss}>
+
+     <img className="honeycomb-cell__image" src={card}/>
+      
+      <div className="honeycomb-cell__title">HTML/CSS</div>
+    </li>    <li className="honeycomb-cell">
+      <img className="honeycomb-cell__image" src={panda} />
+      <div className="honeycomb-cell__title">Bootstrap</div>
+    </li>
+    <li className="honeycomb-cell">
+      <img className="honeycomb-cell__image" src={todo} />
+      <div className="honeycomb-cell__title">Javascript</div>
+    </li>
+    <li className="honeycomb-cell">
+      <img className="honeycomb-cell__image" src="https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg"/>
+      <div className="honeycomb-cell__title">ReactJS</div>
+    </li>
+    <li className="honeycomb-cell">
+      <img className="honeycomb-cell__image" src="https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg"/>
+      <div className="honeycomb-cell__title">Back-end</div>
+    </li>
+    
+
+    </ul>
+ 
+     <ul className='projectlist'>
+            {htmlSection && <li>
               <h2>
                  HTML/CSS
               </h2>
-             </li>
-            <li>
+             </li>}
+         {   <li>
               <h2>
                     Bootstrap
               </h2>
-          </li>
+          </li>}
             <li>
               <h2> Javascript:</h2>
               <ul className='listitems'>
@@ -47,7 +84,7 @@ function Projects() {
                    back-end
               </h2>
            </li>
-        </ul>
+        </ul> 
         <div className='music'>
            <audio controls autoPlay >
             <source src={sound} type="audio/mp3" />

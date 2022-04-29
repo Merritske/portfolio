@@ -53,9 +53,10 @@ function Home() {
    </div>
  </div>
  <div className='music'>
-    <audio controls autoPlay loop>
+    <audio controls autoPlay loop >
             <source src={sound} type="audio/mp3" />
         </audio>
+     
     <h5>muziek : Hey man, Eels </h5>
  </div>
     
