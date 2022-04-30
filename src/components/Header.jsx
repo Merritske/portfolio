@@ -32,23 +32,23 @@ setAnimate(true)
 
  <li>
         
-                <Link to="/" className='linktext'><div className="circle" onClick={transform}> HOME </div></Link>
+                <Link to={"/" }><div className="circle dropbal" onClick={transform}> HOME </div></Link>
        
                 
             </li>
             <li>
           
-                <Link to="/projects">  <div className="circle" onClick={transform}> PROJECTS </div></Link>
+                <Link to={"/projects"}>  <div className="circle" onClick={transform}> PROJECTS </div></Link>
                
             </li>
             <li>
            
-                <Link to="/contact"> <div className="circle" onClick={transform}> CONTACT </div></Link>
+                <Link to={"/contact"}> <div className="circle" id="contact" onClick={transform}> CONTACT </div></Link>
                
             </li> 
             <li>
           
-                <Link to="/about">  <div className="circle" onClick={transform}> EXTRA'S  </div> </Link>
+                <Link to={"/about"}>  <div className="circle" id="about" onClick={transform}> EXTRA'S  </div> </Link>
               
             </li>
 

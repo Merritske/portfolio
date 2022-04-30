@@ -4,10 +4,7 @@ function Cardsection({ image, link, uitleg}) {
   return (
     <div className='card'>
 <a href={link} target="_blank" >
-<img src={image} style={{"width": 300, "height":200}}/>
-
-
-
+<img src={image} />
 </a>  
   <h3>
         
