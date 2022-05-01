@@ -54,8 +54,8 @@ function back(){
 }
   return (
     <div className='projectcontainer' >
-      "under construction" maar je kan al wel een glimp opvangen van enkele projecten
-      <h1>Projecten</h1>
+  
+      {/* <h1>Projecten</h1> */}
 
       <ul className="honeycomb" >
 

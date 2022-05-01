@@ -10,7 +10,7 @@ function Cardsection({ image,alt, link, uitleg, github}) {
         
 {uitleg}
     </h3>
-    <a href={github}><img src='https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png' alt="github logo" id="github"  /> </a> 
+    <a href={github} rel="noreferrer" target="_blank"  ><img src='https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png' alt="github logo" id="github"  /> </a> 
     </div>
   )
 }
