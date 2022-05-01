@@ -7,6 +7,11 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import "./styles/app.css"
+import "./styles/layout.css"
+import "./styles/home.css"
+import "./styles/contact.css"
+import "./styles/projects.css"
+import "./styles/about.css"
 
 
 function App() {

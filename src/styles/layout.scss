@@ -1,0 +1,163 @@
+$bgColor: rgb(4, 76, 243);
+$color: rgb(148, 207, 247);
+$textcolor: rgb(200, 200, 223);
+$donker: rgb(0, 0, 150);
+
+@mixin list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin navbartext {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: $color;
+}
+
+@mixin text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8vw;
+    letter-spacing: 0.1em;
+    line-height: 1.4em;
+}
+
+@mixin container {
+    position: relative;
+    display: inline-block;
+    margin-top: 3vw;
+}
+
+* {
+    color: $textcolor;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(20deg, rgb(148, 207, 247) 10%, rgb(4, 76, 243) 100%);
+    text-align: center;
+    font-family: "sans-serif";
+    margin: 2.8vw
+}
+
+.music {
+    z-index: -1 !important;
+    margin: 3vw;
+
+    audio {
+        height: 2.8vw;
+    }
+
+    h5 {
+        font-size: 1.5vw;
+    }
+}
+
+//HEADER
+.navbar {
+    @include list;
+    height: 5.2vw;
+    margin: 2vw;
+    position: relative;
+    letter-spacing: -1.2vw;
+    background-color: rgba(4, 4, 230, 0.2);
+    border-radius: 50%;
+
+    li {
+        @include navbartext();
+
+        :hover {
+            cursor: pointer;
+            letter-spacing: -0.5vw;
+            font-size: 1.3vw;
+        }
+    }
+
+    a:-webkit-any-link {
+        text-decoration: none;
+    }
+
+    .circle {
+        border-radius: 50%;
+        height: 3vw;
+        width: 3vw;
+        background-color: rgb(4, 4, 230);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dropbal {
+        animation-name: dropbal;
+        animation-duration: 3s;
+        letter-spacing: normal;
+        transform: translateY(4vw);
+        background-color: transparent;
+        color: $donker;
+    }
+
+    .upbal {
+        animation-name: upbal;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes dropbal {
+    0% {
+        background-color: rgb(221, 221, 236);
+        transform: translateY(0vw);
+        letter-spacing: -1.2vw;
+        color: $color;
+    }
+
+    30% {
+        background-color: rgba(4, 4, 230, 0.8);
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    90% {
+        letter-spacing: normal;
+    }
+
+    100% {
+        transform: translateY(4vw);
+        color: $donker;
+    }
+}
+
+@keyframes upbal {
+    0% {
+        transform: translateY(4vw);
+        letter-spacing: normal;
+        background-color: transparent;
+        color: $donker;
+    }
+
+    100% {
+        letter-spacing: -1.2vw;
+        background-color: rgb(4, 4, 230);
+        color: $color;
+    }
+}
+
+//FOOTER
+.footer {
+    background-image: linear-gradient(20deg, rgb(148, 207, 247) 0%, rgb(4, 76, 243) 50%, rgb(148, 207, 247) 100%);
+    width: 100%;
+
+    h3 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.3vw;
+        padding: 1.5vw;
+        letter-spacing: 0.3vw;
+    }
+}

@@ -1,0 +1,35 @@
+.homeContainer {
+  position: relative;
+  display: inline-block;
+  margin-top: 3vw;
+}
+.homeContainer .title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: rgb(148, 207, 247);
+}
+.homeContainer .home {
+  display: flex;
+  align-items: center;
+}
+.homeContainer .home .introtext {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.8vw;
+  letter-spacing: 0.1em;
+  line-height: 1.4em;
+  padding: 1.5vw;
+  text-align: start;
+}
+.homeContainer .home .introtext .textcolor {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: rgb(4, 76, 243);
+          text-decoration-color: rgb(4, 76, 243);
+}
+.homeContainer .home .foto-home {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  width: 30vw;
+  padding: 0.2vw;
+}/*# sourceMappingURL=home.css.map */
