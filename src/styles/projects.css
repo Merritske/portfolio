@@ -123,15 +123,15 @@
   font-weight: bold;
   font-size: 0.9vw;
 }
-.projectcontainer .projectlist img {
-  width: 20vw;
-  margin-top: 1.2vw;
-}
 .projectcontainer .projectlist .cardsectioncontainer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+.projectcontainer .projectlist img {
+  height: 15vw;
+  margin-top: 1.2vw;
 }
 .projectcontainer .projectlist .card {
   border: 3px solid rgb(4, 76, 243);
@@ -139,11 +139,18 @@
   align-items: center;
   width: 30vw;
   margin: 1.2vw;
+  position: relative;
 }
 .projectcontainer .projectlist .card #github {
   width: 3vw;
+  height: auto;
   background-color: rgb(200, 200, 223);
   border-radius: 50%;
-  margin-top: 0;
-  margin-bottom: 1.1vw;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
+.projectcontainer .projectlist .card #github:hover {
+  transform: scale(2);
+  background-color: rgb(148, 207, 247);
 }/*# sourceMappingURL=projects.css.map */

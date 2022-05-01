@@ -182,7 +182,7 @@ function back(){
 
 
       <div className='music'>
-        <audio controls autoPlay >
+        <audio controls autoPlay  loop>
           <source src={sound} type="audio/mp3" />
         </audio>
         <h5><i className='fa fa-music' ></i> De nieuwe wereld symfonie (allegro con fuoco): Antonin Dvorak <i className='fa fa-music' ></i></h5>

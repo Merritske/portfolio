@@ -72,7 +72,7 @@ Kijk op GitHub-account of LinkedIn-pagina om de handleiding en extra features te
       
            <div className='music'>
              
-                 <audio   controls autoPlay >
+                 <audio   controls autoPlay loop>
                      <source src={sound} type="audio/mp3" />
         </audio>  
 <h5> <i className='fa fa-music' ></i>  Don't stop me now : Queen <i className='fa fa-music' ></i></h5>
