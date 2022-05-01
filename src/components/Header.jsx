@@ -1,12 +1,23 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+
+
 
 function Header() {
     
     const[animate, setAnimate] = useState(true)
     let circle = document.getElementsByClassName("circle") 
+const usePathname = ()=>{
+    const location = useLocation();
+    return location.pathname
+}
 
+//OPLOSSEN PATHNAME EN NAVBAR
+console.log(usePathname())
 function transform(e){
+    
+   console.log (e.target.innerText)
+
      for(let x = 0; x< circle.length; x++){
 if(animate && circle[x].innerText=== e.target.innerText){
             circle[x].classList.add("dropbal")
