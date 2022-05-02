@@ -4,7 +4,7 @@ import foto2 from "../Images/atomium.jpg"
 import foto3 from "../Images/viaduct Vilvoorde.jpg"
 import sound from "../music/Hey Man.mp3"
 function Home() {
-console.log(window.location.pathname)
+
 
 // let slideIndex = 0;
 

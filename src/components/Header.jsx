@@ -1,27 +1,40 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 
 
 function Header() {
-    
+    console.log(window.location.pathname)
     const[animate, setAnimate] = useState(true)
     let circle = document.getElementsByClassName("circle") 
-const usePathname = ()=>{
-    const location = useLocation();
-    return location.pathname
-}
+  const location = useLocation();
+
 
 //OPLOSSEN PATHNAME EN NAVBAR
-console.log(usePathname())
+let pathName =  location.pathname
+useEffect(()=>{
+
+let slash = "/"
+for(let i= 0 ; i< circle.length; i++){
+    console.log(pathName)
+    console.log(slash+ circle[i].innerText)
+    if(pathName == slash + circle[i].innerText){
+       console.log('poep')
+    }
+}
+},[pathName])
+
+
 function transform(e){
-    
+console.log(location.pathname)
    console.log (e.target.innerText)
 
      for(let x = 0; x< circle.length; x++){
-if(animate && circle[x].innerText=== e.target.innerText){
-            circle[x].classList.add("dropbal")
+if(animate && circle[x].innerText=== e.target.innerText ){
+
+            circle[x].classList.add("dropbal") 
             circle[x].classList.remove("upbal")
+           
         }
         
         else {
