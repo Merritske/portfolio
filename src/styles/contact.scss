@@ -96,3 +96,18 @@ $donker: rgb(0, 0, 150);
             }
         }
     }
+    @media screen and (max-width: 600px) {
+        .motivatie{
+            display: flex;
+            flex-direction: column;
+            p{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 15px;
+                margin: 20px;
+            }
+            p:nth-child(2){
+                font-size: 12px;
+                letter-spacing: 0.1vw;
+            }
+        }
+    }

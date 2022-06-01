@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-
+import sound from "../music/Hey Man.mp3"
 
 
 function Header() {
@@ -48,7 +48,28 @@ setAnimate(true)
 
 }
 
-   
+//probleem met de navbar die niet gelinkt is met de route...
+//<NavLink to="/blog" className={({!isActive})=>(isActive? "active: ")}></NavLink>
+
+
+//music
+var music = document.getElementsByClassName("audio")
+console.log(music)
+ var audio = new Audio(`${sound}`)
+ console.log(audio)
+const [playM, setPlayM] = useState(true)
+const audioRef = useRef(audio);
+function mute(){
+if(playM ){
+audioRef.current.play()
+
+} 
+ else if(!playM){
+ audioRef.current.pause()
+ }
+setPlayM(!playM)
+console.log(playM)
+}
   return (
     <div>
         <ul className='navbar'>
@@ -57,7 +78,7 @@ setAnimate(true)
  <li>
         
                 <Link to={"/" }><div className="circle dropbal" onClick={transform}> HOME </div></Link>
-       
+ 
                 
             </li>
             <li>
@@ -70,16 +91,26 @@ setAnimate(true)
                 <Link to={"/contact"}> <div className="circle" id="contact" onClick={transform}> CONTACT </div></Link>
                
             </li> 
-            <li>
+            {/* <li>
           
                 <Link to={"/about"}>  <div className="circle" id="about" onClick={transform}> EXTRA'S  </div> </Link>
               
-            </li>
+            </li> */}
 
        
        
         </ul>
-      
+          
+        <div className='music'>
+<i className='fa fa-music' 
+ onClick={mute}
+></i> 
+<audio loop
+src={sound} type="audio/mp3" 
+ className='audio'>  
+     </audio>
+ <h5>Hey man, Eels  </h5>
+</div>
     </div>
   )
 }

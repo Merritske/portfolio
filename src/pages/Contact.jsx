@@ -38,7 +38,7 @@ Het avontuur begint nadat het besef kwam dat een vaste job in het onderwijs geen
   <br/>
 Kijk op GitHub-account of LinkedIn-pagina om de handleiding en extra features te bekijken.
 <br/>
- Je kan ook de <Link to={"/about"} onClick={about} > extra's</Link> bekijken
+ {/* Je kan ook de <Link to={"/about"} onClick={about} > extra's</Link> bekijken */}
 </p>
 
            </div>
@@ -52,7 +52,14 @@ Kijk op GitHub-account of LinkedIn-pagina om de handleiding en extra features te
        <a href='mailto: merritske@gmail.com'><i className='fa fa-envelope-o' id="mail" onMouseOver={envelopeO} onMouseOut={envelopD} ></i>  </a>
     
            </div>
-
+      
+           {/* <div className='music'>
+           <i className='fa fa-music' ></i> 
+                 <audio   controls  loop >
+                     <source src={sound} type="audio/mp3" />
+        </audio>  
+<h5>  Don't stop me now : Queen </h5>
+        </div> */}
       <div className='cv' >
   {/* show 
     { cvshow &&  <div>
@@ -69,14 +76,7 @@ Kijk op GitHub-account of LinkedIn-pagina om de handleiding en extra features te
       </div>
    
           
-      
-           <div className='music'>
-             
-                 <audio   controls autoPlay loop>
-                     <source src={sound} type="audio/mp3" />
-        </audio>  
-<h5> <i className='fa fa-music' ></i>  Don't stop me now : Queen <i className='fa fa-music' ></i></h5>
-        </div>
+
 
       <br/>
     </div>

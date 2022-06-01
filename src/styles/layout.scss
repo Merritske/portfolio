@@ -71,9 +71,9 @@ $donker: rgb(0, 0, 150);
         animation-name: dropbal;
         animation-duration: 3s;
         letter-spacing: normal;
-        transform: translateY(4vw);
+        transform: translateY(5vw);
         background-color: transparent;
-        color: $donker;
+        color: $textcolor;
     }
 
     .upbal {
@@ -96,6 +96,7 @@ $donker: rgb(0, 0, 150);
 
     50% {
         background-color: transparent;
+         color: $donker;
     }
 
     90% {
@@ -103,14 +104,14 @@ $donker: rgb(0, 0, 150);
     }
 
     100% {
-        transform: translateY(4vw);
-        color: $donker;
+        transform: translateY(5vw);
+       color: $textcolor;
     }
 }
 
 @keyframes upbal {
     0% {
-        transform: translateY(4vw);
+        transform: translateY(5vw);
         letter-spacing: normal;
         background-color: transparent;
         color: $donker;
@@ -125,6 +126,9 @@ $donker: rgb(0, 0, 150);
 
 //FOOTER
 .footer {
+    position: fixed;
+    left: 0;
+    bottom: -10px;
     background-image: linear-gradient(20deg, rgb(148, 207, 247) 0%, rgb(4, 76, 243) 50%, rgb(148, 207, 247) 100%);
     width: 100%;
 
@@ -135,3 +139,29 @@ $donker: rgb(0, 0, 150);
         letter-spacing: 0.3vw;
     }
 }
+@media screen and (max-width: 600px){
+    .footer {
+position: fixed;
+bottom: 10px;
+   
+    background-image: linear-gradient(20deg, rgb(148, 207, 247) 0%, rgb(4, 76, 243) 50%, rgb(148, 207, 247) 100%);
+    width: 100%;
+        h3 {
+            font-size: 15px;
+        }
+    }
+  //HEADER
+.navbar {
+    @include list;
+    height: 5.2vw;
+    margin: 2vw;
+    position: relative;
+ 
+    background-color: rgba(4, 4, 230, 0.2);
+    border-radius: 50%;
+
+    li {
+    font-size: 15px;
+
+     
+}}}

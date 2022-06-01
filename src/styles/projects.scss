@@ -28,7 +28,11 @@ $donker: rgb(0, 0, 150);
 @mixin container {
     position: relative;
     display: inline-block;
-    margin-top: 3vw;
+    margin-top:10%;
+    margin-bottom: 20%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -107,7 +111,7 @@ $donker: rgb(0, 0, 150);
 }
 
 .honeycomb-cell:hover .honeycomb-cell__title {
-    opacity: 0.4;
+    opacity: 0.5;
 
 }
 
@@ -124,7 +128,15 @@ $donker: rgb(0, 0, 150);
 
 .projectcontainer {
     @include container;
+.head{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 
+}
     .projectlist {
         background-color: $donker;
         color: $bgColor;
@@ -190,4 +202,90 @@ h3{
               
         }
     }
+}
+@media screen and (max-width: 600px) {
+    .honeycomb-cell__title {
+        font-size: 15px;
+    }
+    
+    .honeycomb-cell {
+        margin: 1.5vw;
+    }
+  
+.projectcontainer {
+
+.head{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+    .projectlist {
+        background-color: $donker;
+        color: $bgColor;
+        border-radius: 15px;
+        width: 100%;
+        margin-right: 70%;
+        position: absolute;
+   top: 0vh;
+    
+        z-index: 6;
+        padding: 1.2vw;
+h2{
+    font-size: 12px;
+    padding: 1.5vw;
+}
+h3{
+    font-size: 12px;
+    padding: 1.2vw;
+}
+        button {
+            padding: 0.2vw 0.5vw;
+            margin: 5px;
+            border-radius: 5px;
+            border: 2px solid transparent;
+            background-color: $color;
+            color: $donker;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .cardsectioncontainer {
+                display: block;
+          align-items: center;
+       
+  }       
+           img{
+                    height: 15vw;
+ 
+    margin-top: 1.2vw;
+}
+            .card {
+                border: 3px solid $bgColor;
+                border-radius: 5px;
+                align-items: center;
+                width: 90%;
+            margin: 10px;
+                position: relative;
+
+ #github{
+                 width: 3vw;
+                 height: auto;
+                 background-color: $textcolor;
+                 border-radius: 50%;
+               position: absolute;
+               left: 10px;
+               top: 0px;
+             }
+             #github:hover{
+                 transform: scale(2);
+                 background-color: $color;
+             }
+              
+        }
+    }
+}
 }

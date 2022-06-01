@@ -54,7 +54,8 @@ function back(){
 }
   return (
     <div className='projectcontainer' >
-  
+
+
       {/* <h1>Projecten</h1> */}
 
       <ul className="honeycomb" >
@@ -181,12 +182,14 @@ function back(){
            </div>}
 
 
-      <div className='music'>
-        <audio controls autoPlay  loop>
+   
+     {/* <div className='music'>
+       <i className='fa fa-music' ></i> 
+        <audio controls  loop>
           <source src={sound} type="audio/mp3" />
         </audio>
-        <h5><i className='fa fa-music' ></i> De nieuwe wereld symfonie (allegro con fuoco): Antonin Dvorak <i className='fa fa-music' ></i></h5>
-      </div>
+        <h5>De nieuwe wereld symfonie (allegro con fuoco): Antonin Dvorak </h5>
+      </div> */}
 
     </div>
   )

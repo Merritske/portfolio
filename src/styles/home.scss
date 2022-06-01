@@ -28,7 +28,11 @@ $donker: rgb(0, 0, 150);
 @mixin container {
     position: relative;
     display: inline-block;
-    margin-top: 3vw;
+    margin-top:5%;
+    margin-bottom: 20%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -39,6 +43,7 @@ $donker: rgb(0, 0, 150);
 
     .title {
         @include navbartext();
+        padding-bottom: 20px;
     }
 
     .home {
@@ -63,3 +68,34 @@ $donker: rgb(0, 0, 150);
         }
     }
 }
+@media screen and (max-width: 600px) {
+    .homeContainer {
+    display: flex;
+    flex-direction: column;
+
+        .title {
+        font-size: 15px;
+            padding-bottom: 10px;
+        }
+
+        .home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .introtext {
+            
+                text-align: start;
+
+              
+            }
+
+            .foto-home {
+                object-fit: scale-down;
+                width: 30vw;
+                padding: 0.2vw;
+            }
+        }
+    }
+}
+    

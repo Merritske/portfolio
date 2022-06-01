@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 import foto from "../Images/love.jpg"
 import foto2 from "../Images/atomium.jpg"
 import foto3 from "../Images/viaduct Vilvoorde.jpg"
-import sound from "../music/Hey Man.mp3"
-function Home() {
 
+
+function Home() {
 
 // let slideIndex = 0;
 
@@ -22,13 +23,14 @@ function Home() {
 // }
 // showSlides();
 
+
   return (
 <div className='homeContainer'>
 
 
 
-  
-        <h1 className='title'>  Welkom op de homepage van An Verbeeck</h1> 
+            <h1 className='title'>  Welkom op de homepage van An Verbeeck</h1> 
+
       <div className='home'>
           
       <p className='introtext'>
@@ -52,13 +54,7 @@ function Home() {
 
    </div>
  </div>
- <div className='music'>
-    <audio controls autoPlay loop >
-            <source src={sound} type="audio/mp3" />
-        </audio>
-     
-    <h5><i className='fa fa-music' ></i> Hey man, Eels <i className='fa fa-music' ></i> </h5>
- </div>
+
     
     </div>
   )
