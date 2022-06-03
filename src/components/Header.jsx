@@ -91,11 +91,11 @@ console.log(playM)
                 <Link to={"/contact"}> <div className="circle" id="contact" onClick={transform}> CONTACT </div></Link>
                
             </li> 
-            {/* <li>
+       <li>
           
-                <Link to={"/about"}>  <div className="circle" id="about" onClick={transform}> EXTRA'S  </div> </Link>
+                <Link to={"/about"}>  <div className="circle" id="about" onClick={transform}> SKILLZ  </div> </Link>
               
-            </li> */}
+            </li> 
 
        
        
@@ -105,7 +105,7 @@ console.log(playM)
 <i className='fa fa-music' 
  onClick={mute}
 ></i> 
-<audio loop
+<audio loop 
 src={sound} type="audio/mp3" 
  className='audio'>  
      </audio>

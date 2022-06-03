@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
-import { Document, Page, pdfjs } from 'react-pdf'
-import { Link } from 'react-router-dom'
-import sound from '../music/don\'t stop me.mp3'
+import React from 'react'
+import { pdfjs } from 'react-pdf'
+
+// import sound from '../music/don\'t stop me.mp3'
 import cv from '../pdf/CV front-end.pdf'
 import linkedIn from "../Images/linkedin.png"
 
