@@ -29,27 +29,40 @@ div > div.react-pdf__Page__textContent {
 .logo {
   display: flex;
   flex-direction: row;
-  float: right;
   margin: 2.5vw;
 }
 .logo #linkedIn {
   width: 3vw;
   margin-left: 2vw;
 }
+.logo #linkedIn:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 10px black;
+  border-radius: 15px;
+}
 .logo #github {
   width: 3vw;
   margin-left: 2vw;
+}
+.logo #github:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 10px black;
+  border-radius: 50%;
 }
 .logo #mail {
   font-size: 3vw;
   margin-left: 2vw;
   color: rgb(0, 0, 150);
 }
+.logo #mail:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 10px black;
+  border-radius: 80% 80% 5px 5px;
+}
 
 .cv {
   width: 30vw;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 50px;
 }
 .cv button {
   background-color: rgb(4, 76, 243);

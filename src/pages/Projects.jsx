@@ -4,7 +4,7 @@ import todo from '../Images/todo.jpg'
 //import rekengame from '../Images/rekengame.jpg'
 import game from "../Images/game.jpg"
 import panda from '../Images/moviebootstrap.jpg'
-//import card from '../Images/cards.jpg'
+import card from '../Images/cards.jpg'
 import menuApp from "../Images/menu.jpg"
 import poesnpm from '../Images/poesnpm.jpg'
 import html from "../Images/html.jpg"
@@ -63,7 +63,7 @@ function back(){
 
         <li className="honeycomb-cell" onClick={htmlcss}>
 
-          <img className="honeycomb-cell__image" src={card} alt="online shop handtassen" />
+          <img className="honeycomb-cell__image" src={html} alt="HTML/CSS" />
 
           <div className="honeycomb-cell__title">HTML/CSS</div>
         </li>
