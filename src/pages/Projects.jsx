@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 // import sound from '../music/dvorak.mp3'
 import todo from '../Images/todo.jpg'
-import rekengame from '../Images/rekengame.jpg'
+//import rekengame from '../Images/rekengame.jpg'
 import game from "../Images/game.jpg"
 import panda from '../Images/moviebootstrap.jpg'
-import card from '../Images/cards.jpg'
+//import card from '../Images/cards.jpg'
 import menuApp from "../Images/menu.jpg"
 import poesnpm from '../Images/poesnpm.jpg'
+import html from "../Images/html.jpg"
 import Cardsection from '../components/cards'
 
 function Projects() {
@@ -94,12 +95,19 @@ function back(){
           HTML/CSS
         </h2>
 
-        <Cardsection
+        {/* <Cardsection
           image={card}
           alt="online shop handtassen"
           link="https://cards-merritske.vercel.app/"
           uitleg="  HTML en css: layout voor handtassenwinkel "
           github="https://github.com/Merritske/cards"
+        /> */}
+               <Cardsection
+          image={html}
+          alt="hetemalecss"
+          link="https://hetemalecss-merritske.vercel.app/"
+          uitleg="  HTML en css: verschillende mogelijkheden "
+          github="https://github.com/Merritske/hetemalecss"
         />
 
       </div>}
@@ -133,13 +141,13 @@ function back(){
               uitleg=" Todolist met Firebase: todo app voor beginnend dementerende ouderen die nog thuis wonen en waarvan de kinderen het reilen en zeilen mee in het oog willen houden"
            github="https://github.com/Merritske/TodoWithFirebase"
            />
-            <Cardsection
+            {/* <Cardsection
               image={rekengame}
               alt="inlog rekenoefening"
               link="https://rekenspel-merritske.vercel.app/"
               uitleg="Rekenspel waarbij random oefeningen gegeven worden. Leerkracht kan nakijken wie hoeveel gespeeld heeft en welk percentage ze juist hebben "
               github="https://github.com/Merritske/All-I-Need"
-            />
+            /> */}
 
             <Cardsection
               image={game}

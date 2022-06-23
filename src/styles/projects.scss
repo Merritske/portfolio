@@ -28,7 +28,7 @@ $donker: rgb(0, 0, 150);
 @mixin container {
     position: relative;
     display: inline-block;
-    margin-top:10%;
+    margin-top: 10%;
     margin-bottom: 20%;
     height: 100%;
     margin-left: auto;
@@ -128,15 +128,17 @@ $donker: rgb(0, 0, 150);
 
 .projectcontainer {
     @include container;
-.head{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
 
-}
+    .head {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
     .projectlist {
         background-color: $donker;
         color: $bgColor;
@@ -144,18 +146,19 @@ $donker: rgb(0, 0, 150);
         width: 70vw;
         margin-right: 70%;
         position: absolute;
-   top: 0vh;
-    
+        top: 0vh;
         z-index: 6;
         padding: 1.2vw;
-h2{
-    font-size: 2vw;
-    padding: 1.5vw;
-}
-h3{
-    font-size: 1.6vw;
-    padding: 1.2vw;
-}
+        h2 {
+            font-size: 2vw;
+            padding: 1.5vw;
+        }
+
+        h3 {
+            font-size: 1.6vw;
+            padding: 1.2vw;
+        }
+
         button {
             padding: 0.2vw 0.5vw;
             margin: 0.8vw;
@@ -165,129 +168,141 @@ h3{
             color: $donker;
             font-weight: bold;
             font-size: 0.9vw;
-            
+
         }
-      
+
 
         .cardsectioncontainer {
-                display: flex;
+            display: flex;
             flex-direction: row;
             justify-content: space-around;
             flex-wrap: wrap;
-  }       
-           img{
-                    height: 15vw;
- 
-    margin-top: 1.2vw;
-}
-            .card {
-                border: 3px solid $bgColor;
-                border-radius: 5px;
-                align-items: center;
-                width: 30vw;
-                margin: 1.2vw;
-                position: relative;
+        }
 
- #github{
-                 width: 3vw;
-                 height: auto;
-                 background-color: $textcolor;
-                 border-radius: 50%;
-               position: absolute;
-               left: 10px;
-               top: 0px;
-             }
-             #github:hover{
-                 transform: scale(2);
-                 background-color: $color;
-             }
-              
+        img {
+            height: 15vw;
+            width: 25vw;
+            object-fit: cover;
+            margin-top: 1.2vw;
+        }
+
+        .card {
+            border: 3px solid $bgColor;
+            border-radius: 5px;
+            align-items: center;
+            width: 30vw;
+            margin: 1.2vw auto;
+            position: relative;
+
+            #github {
+                width: 3vw;
+                height: auto;
+                background-color: $textcolor;
+                border-radius: 50%;
+                position: absolute;
+                left: 10px;
+                top: 0px;
+            }
+
+            #github:hover {
+                transform: scale(2);
+                background-color: $color;
+            }
+
         }
     }
-}  
+}
+
 @media screen and (max-width: 600px) {
     .honeycomb-cell__title {
         font-size: 15px;
     }
-    
+
     .honeycomb-cell {
         margin: 1.5vw;
     }
-  
-.projectcontainer {
 
-.head{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
+    .projectcontainer {
 
-}
-    .projectlist {
-        background-color: $donker;
-        color: $bgColor;
-        border-radius: 15px;
-        width: 100%;
-        margin-right: 70%;
-        position: absolute;
-   top: 0vh;
-    
-        z-index: 6;
-        padding: 1.2vw;
-h2{
-    font-size: 12px;
-    padding: 1.5vw;
-}
-h3{
-    font-size: 12px;
-    padding: 1.2vw;
-}
-        button {
-            padding: 0.2vw 0.5vw;
-            margin: 5px;
-            border-radius: 5px;
-            border: 2px solid transparent;
-            background-color: $color;
-            color: $donker;
-            font-weight: bold;
-            font-size: 12px;
+        .head {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+
         }
 
-        .cardsectioncontainer {
+        .projectlist {
+            background-color: $donker;
+            color: $bgColor;
+            border-radius: 15px;
+            width: 100%;
+            margin-right: 70%;
+            position: absolute;
+            top: 0vh;
+
+            z-index: 6;
+            padding: 1.2vw;
+
+            h2 {
+                font-size: 12px;
+                padding: 1.5vw;
+            }
+
+            h3 {
+                font-size: 12px;
+                padding: 1.2vw;
+            }
+
+            button {
+                padding: 0.2vw 0.5vw;
+                margin: 5px;
+                border-radius: 5px;
+                border: 2px solid transparent;
+                background-color: $color;
+                color: $donker;
+                font-weight: bold;
+                font-size: 12px;
+            }
+
+            .cardsectioncontainer {
                 display: block;
-          align-items: center;
-       
-  }       
-           img{
-                    height: 15vw;
- 
-    margin-top: 1.2vw;
-}
+                align-items: center;
+
+            }
+
+            img {
+                height: 15vw;
+
+                margin-top: 1.2vw;
+            }
+
             .card {
                 border: 3px solid $bgColor;
                 border-radius: 5px;
                 align-items: center;
                 width: 90%;
-            margin: 10px;
+                margin: 10px;
                 position: relative;
 
- #github{
-                 width: 3vw;
-                 height: auto;
-                 background-color: $textcolor;
-                 border-radius: 50%;
-               position: absolute;
-               left: 10px;
-               top: 0px;
-             }
-             #github:hover{
-                 transform: scale(2);
-                 background-color: $color;
-             }
-              
+                #github {
+                    width: 3vw;
+                    height: auto;
+                    background-color: $textcolor;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 10px;
+                    top: 0px;
+                }
+
+                #github:hover {
+                    transform: scale(2);
+                    background-color: $color;
+                }
+
+            }
         }
     }
-}
 }

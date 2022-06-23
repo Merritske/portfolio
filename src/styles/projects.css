@@ -143,6 +143,9 @@
 }
 .projectcontainer .projectlist img {
   height: 15vw;
+  width: 25vw;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-top: 1.2vw;
 }
 .projectcontainer .projectlist .card {
@@ -150,7 +153,7 @@
   border-radius: 5px;
   align-items: center;
   width: 30vw;
-  margin: 1.2vw;
+  margin: 1.2vw auto;
   position: relative;
 }
 .projectcontainer .projectlist .card #github {
