@@ -19,7 +19,7 @@
 }
 .navbar li :hover {
   cursor: pointer;
-  letter-spacing: -0.5vw;
+  letter-spacing: normal;
   font-size: 1.3vw;
 }
 .navbar a:-webkit-any-link {

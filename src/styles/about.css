@@ -8,6 +8,10 @@
   margin-right: auto;
   width: 80%;
 }
+.container h2 {
+  text-align: left;
+  margin-top: 30px;
+}
 
 .container > h1 {
   margin-top: 5%;
@@ -31,8 +35,7 @@
   letter-spacing: 2px;
   font-weight: bold;
   text-align: start;
-  padding: 8px;
-  width: 150px;
+  padding: 8px 0 8px 8px;
   border-radius: 5px 0 0 5px;
   border: 3px solid rgb(0, 0, 150);
 }
@@ -40,7 +43,7 @@
 .bar-containLevel {
   display: flex;
   justify-content: space-between;
-  width: 120%;
+  width: 90%;
   height: inherit;
   border-bottom: 3px solid rgb(148, 207, 247);
   border-top: 3px solid rgb(148, 207, 247);

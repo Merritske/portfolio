@@ -165,7 +165,9 @@ h3{
             color: $donker;
             font-weight: bold;
             font-size: 0.9vw;
+            
         }
+      
 
         .cardsectioncontainer {
                 display: flex;
@@ -202,7 +204,7 @@ h3{
               
         }
     }
-}
+}  
 @media screen and (max-width: 600px) {
     .honeycomb-cell__title {
         font-size: 15px;
