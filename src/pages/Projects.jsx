@@ -8,6 +8,7 @@ import card from '../Images/cards.jpg'
 import menuApp from "../Images/menu.jpg"
 import poesnpm from '../Images/poesnpm.jpg'
 import html from "../Images/html.jpg"
+import bss from "../Images/bss.jpg"
 import Cardsection from '../components/cards'
 
 function Projects() {
@@ -155,6 +156,13 @@ function back(){
               link="https://game-blokje-merritske.vercel.app/"
               uitleg="Game: open de deur voor de diertjes (niet voor gevoelige spelers)"
               github="https://github.com/Merritske/GameBlokje"
+            />
+            <Cardsection
+            image={bss}
+            alt = "Blad-steen-schaar"
+            link="https://blad-steen-schaar-merritske.vercel.app/" 
+            uitleg="Het spel blad-steen-schaar"
+            github="https://github.com/Merritske/frontend/tree/main/tuto10"
             />
           </div>
         </div>
