@@ -174,11 +174,9 @@
   .honeycomb-cell__title {
     font-size: 15px;
   }
-
   .honeycomb-cell {
     margin: 1.5vw;
   }
-
   .projectcontainer .head {
     display: flex;
     flex-direction: row;

@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import foto from "../Images/love.jpg"
 import foto2 from "../Images/atomium.jpg"
 import foto3 from "../Images/viaduct Vilvoorde.jpg"
+import foto1 from "../Images/1bol.jpg"
 
 
 function Home() {
@@ -51,7 +52,7 @@ function Home() {
 <div className="slideshow">
    {/* <img src={foto3} className="foto-home" /> */}
   <img src={foto2} className="foto-home" />
-
+  <img src={foto1} className="foto-home" />
    </div>
  </div>
 
