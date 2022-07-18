@@ -50,9 +50,10 @@ function Home() {
 
       </p>
 <div className="slideshow">
-   {/* <img src={foto3} className="foto-home" /> */}
+   {/* <img src={foto3} className="foto-home" /> */}  
+   <img src={foto1} className="foto-home" />
   <img src={foto2} className="foto-home" />
-  <img src={foto1} className="foto-home" />
+
    </div>
  </div>
 
