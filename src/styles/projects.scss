@@ -168,7 +168,9 @@ $donker: rgb(0, 0, 150);
             color: $donker;
             font-weight: bold;
             font-size: 0.9vw;
-
+&:hover{
+    cursor: pointer;
+}
         }
 
 
@@ -265,7 +267,9 @@ $donker: rgb(0, 0, 150);
                 color: $donker;
                 font-weight: bold;
                 font-size: 12px;
-            }
+            
+            }  
+          
 
             .cardsectioncontainer {
                 display: block;

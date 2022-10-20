@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react'
 import "../styles/about.css"
-
+import handtas from "../Images/20200426_125859.jpg"
+import kleedje from "../Images/IMG-20170227-WA0003.jpg"
+import zwaan from "../Images/zwaan.jpg"
+import abdij from "../Images/abdij.jpg"
+import Bru from "../Images/brussel.jpg"
 
 function About() {
 
@@ -64,17 +68,17 @@ function About() {
     level: "60%"
   }, {
     name: "Spaans",
-    level: "20%"
+    level: "10%"
   }]
   const computerprogramma = [{
     name: "Photoshop",
-    level: "70%"
-  }, {
-    name: "Illustrator",
     level: "60%"
   }, {
+    name: "Illustrator",
+    level: "45%"
+  }, {
     name: "Freehand",
-    level: "70%"
+    level: "60%"
   }]
   const extra = [
     {
@@ -82,7 +86,7 @@ function About() {
       level: "95%"
     }, {
       name: "Luistervaardigheid",
-      level: "80%"
+      level: "85%"
     },
     {
       name: "Leervermogen",
@@ -92,6 +96,32 @@ function About() {
 
   return (
     <div className='container'>
+      <h1>ABOUT ME</h1>
+      <h2>An Verbeeck alias Merritske</h2>
+      <p>Mijn vrienden omschrijven mij als betrouwbaar en iemand die goed kan luisteren. 
+        Een logisch gevolg van het feit dat ik geïnteresseerd ben in wat anderen te vertellen hebben omdat ik hoop iets van hen te leren.
+      <br />
+       Ik hou van afwisseling en uitdagingen, mijn leergierigheid vervult deze behoefte.
+      </p>
+      <h1>HOBBIES</h1>
+      <h2>kortverhalen schrijven:</h2>
+      <p>Elk jaar doe ik mee met de kortverhalenwedstrijd van het Davidsfonds Heist-op-den-Berg. 
+        In 2019 en 2021 heb ik de eerste prijs gewonnen. Lees mijn <a href="https://kortverhalen.vercel.app/" target="_blank" > verhalen hier</a>.</p>
+     <h2>muziek spelen:</h2>
+     <p>Sinds mijn acht jaar speel ik altviool. Sinds de oprichting van het <a href="https://www.herentalssymfonischorkest.be/" target="_blank">Herentals Symfonisch Orkest </a> 
+     speel ik in dit semi-professioneel orkest.</p>
+     <h2>handtassen en kleren:</h2>
+     <p><img src={handtas} alt="handtas" height="200px" /> <img src={kleedje} alt="kleedje" height="200px"/></p>
+      <h2>toneelmeester:</h2>
+      <p>Bij het Vlaams MuziekTheater, kortweg VMT of vroeger bekend als de Heistse Operettekring, werk ik mee als toneelmeester. Mijn taak als toneelmeester bestaat erin dat ik de attributen die de artiesten nodig hebben moet klaarzetten, indien nodig aangeven. Wij houden ook mee in het oog dat de artiesten op tijd op het podium staan.</p>
+      <h2>wandelen:</h2>
+      <p>Tijdens mijn wandelingen maak ik graag foto's.
+        <br />
+         <img src={zwaan} alt="zwaan, Bokrijk" height="200px" /> 
+         <img src={abdij} alt="abdij, Averbode" height="200px" /> 
+         <img src={Bru} alt="bloem, Belgische driekleu" height="200px"/></p>
+
+         
       <h1>SKILLZ</h1>
       <h2>Programmeertalen:</h2>
       {skillz.map((skill, index) => (
@@ -155,7 +185,7 @@ function About() {
           <div className="bar-label" style={{ "width": "180px" }}>
             {skill.name}
           </div>
-          <div className="bar-containLevel" style={{ "width": "70%" }}>
+          <div className="bar-containLevel" >
             <div className="bar-contain " style={{ "width": `${skill.level}` }}>
 
             </div>

@@ -41,6 +41,17 @@ $donker: rgb(0, 0, 150);
     h2{
     text-align: left;
     margin-top: 30px;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 25px;
+    text-align: start;
+    position: relative;
+    left: 30px;
+}
+img{
+    height: 300px;
+    margin: 20px;
 }
 }
 
@@ -74,7 +85,7 @@ $donker: rgb(0, 0, 150);
 .bar-containLevel {
     display: flex;
     justify-content: space-between;
-     width: 90%;
+     width: 100%;
     height: inherit;
     border-bottom: 3px solid $color;
     border-top: 3px solid $color;

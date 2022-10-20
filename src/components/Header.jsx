@@ -93,7 +93,7 @@ console.log(playM)
             </li> 
        <li>
           
-                <Link to={"/about"}>  <div className="circle" id="about" onClick={transform}> SKILLZ  </div> </Link>
+                <Link to={"/about"}>  <div className="circle" id="about" onClick={transform}> ABOUT</div> </Link>
               
             </li> 
 

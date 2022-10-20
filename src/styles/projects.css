@@ -135,6 +135,9 @@
   font-weight: bold;
   font-size: 0.9vw;
 }
+.projectcontainer .projectlist button:hover {
+  cursor: pointer;
+}
 .projectcontainer .projectlist .cardsectioncontainer {
   display: flex;
   flex-direction: row;
