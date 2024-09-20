@@ -5,6 +5,11 @@ import kleedje from "../Images/IMG-20170227-WA0003.jpg"
 import zwaan from "../Images/zwaan.jpg"
 import abdij from "../Images/abdij.jpg"
 import Bru from "../Images/brussel.jpg"
+import duim from "../Images/duim omhoog.jpg"
+import Eric from "../Images/Eric.jpg"
+import Eddy from "../Images/optreden Eddy.jpg"
+import optreden from "../Images/optreden 1.jpg"
+
 
 function About() {
 
@@ -105,15 +110,21 @@ function About() {
       </p>
       <h1>HOBBIES</h1>
       <h2>kortverhalen schrijven:</h2>
-      <p>Elk jaar doe ik mee met de kortverhalenwedstrijd van het Davidsfonds Heist-op-den-Berg. 
-        In 2019 en 2021 heb ik de eerste prijs gewonnen. Lees mijn <a href="https://kortverhalen.vercel.app/" target="_blank" > verhalen hier</a>.</p>
+      <p>Elk jaar doe ik mee met de kortverhalenwedstrijd van het Davidsfonds Heist-op-den-Berg.
+      In 2023 heb ik de derde prijs gewonnen, in 2021 en 2019 heb ik de eerste prijs gewonnen. Lees mijn <a href="https://kortverhalen.vercel.app/" target="_blank" > verhalen hier</a>.</p>
      <h2>muziek spelen:</h2>
-     <p>Sinds mijn acht jaar speel ik altviool. Sinds de oprichting van het <a href="https://www.herentalssymfonischorkest.be/" target="_blank">Herentals Symfonisch Orkest </a> 
-     speel ik in dit semi-professioneel orkest.</p>
+     <p>Sinds mijn acht jaar speel ik altviool. 
+    Sinds jaren ben ik lid van verscheidene semi-professionele orkesten. 
+    Momenteel zit ik bij het "Mechels Kamerorkest".</p>
      <h2>handtassen en kleren:</h2>
      <p><img src={handtas} alt="handtas" height="200px" /> <img src={kleedje} alt="kleedje" height="200px"/></p>
       <h2>toneelmeester:</h2>
-      <p>Bij het Vlaams MuziekTheater, kortweg VMT of vroeger bekend als de Heistse Operettekring, werk ik mee als toneelmeester. Mijn taak als toneelmeester bestaat erin dat ik de attributen die de artiesten nodig hebben moet klaarzetten, indien nodig aangeven. Wij houden ook mee in het oog dat de artiesten op tijd op het podium staan.</p>
+      <p>Bij het Vlaams MuziekTheater, kortweg VMT of vroeger bekend als de Heistse Operettekring, 
+        werk ik mee als toneelmeester en onderhoud ik ook de website. 
+        Mijn taak als toneelmeester bestaat erin dat ik de attributen 
+        die de artiesten nodig hebben, moet klaarzetten, indien nodig aangeven. 
+        Wij houden ook mee in het oog dat de artiesten op tijd op het podium staan.
+        </p>
       <h2>wandelen:</h2>
       <p>Tijdens mijn wandelingen maak ik graag foto's.
         <br />
@@ -121,7 +132,15 @@ function About() {
          <img src={abdij} alt="abdij, Averbode" height="200px" /> 
          <img src={Bru} alt="bloem, Belgische driekleu" height="200px"/></p>
 
-         
+        <h2>fotografie</h2> 
+        <p> Een fotograaf nodig tijdens je feestje of foto's nodig van je optreden?
+          <br />
+          Je weet me wel te vinden...
+          <img src={duim} alt="duim omhoog, achtergrond flew" height="200px" /> 
+          <img src={Eric} alt="gekke foto BBQ" height="200px"/>
+         <img src={Eddy} alt="optreden" height="200px" /> 
+         <img src={optreden} alt="optreden" height="200px"/>
+        </p>
       <h1>SKILLZ</h1>
       <h2>Programmeertalen:</h2>
       {skillz.map((skill, index) => (
@@ -199,8 +218,8 @@ function About() {
       <div className="container">
         <h1 >REFERENCES</h1>
         <div className='references'>
-          <h3>Atilla Balin: instructeur frontend development </h3>
-          <a href='mailto:atilla.balin@intecbrussel.be' >atilla.balin@intecbrussel.be</a>
+          <h3>Ludo Cattoor</h3>
+          <a href='mailto:ludo.cattoor@startprojecten.be' >ludo.cattoor@startprojecten.be</a>
         </div>
         <div className='references'>
           <h3>Ruud Marks: teamleider tewerkstelling en sociale vaardigheden </h3>
