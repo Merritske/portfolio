@@ -135,7 +135,7 @@ function About() {
         <h2>fotografie</h2> 
         <p> Een fotograaf nodig tijdens je feestje of foto's nodig van je optreden?
           <br />
-          Je weet me wel te vinden...
+          Je weet me wel te vinden dan...
           <img src={duim} alt="duim omhoog, achtergrond flew" height="200px" /> 
           <img src={Eric} alt="gekke foto BBQ" height="200px"/>
          <img src={Eddy} alt="optreden" height="200px" /> 
