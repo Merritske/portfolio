@@ -5,10 +5,10 @@ import kleedje from "../Images/IMG-20170227-WA0003.jpg"
 import zwaan from "../Images/zwaan.jpg"
 import abdij from "../Images/abdij.jpg"
 import Bru from "../Images/brussel.jpg"
-import duim from "../Images/duim omhoog.jpg"
-import Eric from "../Images/Eric.jpg"
-import Eddy from "../Images/optreden Eddy.jpg"
-import optreden from "../Images/optreden 1.jpg"
+import duim from "../Images/duim omhoog.JPG"
+import Eric from "../Images/Eric.JPG"
+import Eddy from "../Images/optreden Eddy.JPG"
+import optreden from "../Images/optreden 1.JPG"
 
 
 function About() {
