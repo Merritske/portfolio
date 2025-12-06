@@ -14,7 +14,9 @@
   margin-bottom: 20px;
 }
 .container p {
-  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3em;
+  line-height: 1.4em;
   text-align: start;
   position: relative;
   left: 30px;
@@ -25,6 +27,7 @@
 }
 
 .container > h1 {
+  font-size: 2 em;
   margin-top: 5%;
   margin-bottom: 4%;
 }

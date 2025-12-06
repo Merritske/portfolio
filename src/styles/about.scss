@@ -20,8 +20,7 @@ $donker: rgb(0, 0, 150);
 
 @mixin text {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.8vw;
-    letter-spacing: 0.1em;
+    font-size: 1.3em;
     line-height: 1.4em;
 }
 
@@ -44,7 +43,7 @@ $donker: rgb(0, 0, 150);
     margin-bottom: 20px;
 }
 p{
-    font-size: 25px;
+    @include text;
     text-align: start;
     position: relative;
     left: 30px;
@@ -56,6 +55,7 @@ img{
 }
 
 .container>h1 {
+    font-size: 2 em;
     margin-top: 5%;
     margin-bottom: 4%;
 }

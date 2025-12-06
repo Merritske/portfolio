@@ -20,45 +20,53 @@ function About() {
     name: "CSS",
     level: "90%"
   }, {
-    name: "SASS",
-    level: "70%"
-  }, {
-    name: "Bootstrap",
-    level: "80%"
-  }, {
     name: "JavaScript",
-    level: "90%"
-  }, {
-    name: "React",
-    level: "80%"
-  }, {
-    name: "Redux",
+    level: "85%"
+  },
+  {
+    name: "SASS",
     level: "50%"
-  }, {
-    name: "Node",
-    level: "20%"
-  }, {
-    name: "Express",
-    level: "30%"
-  }, {
+  },
+   {
+    name: "Bootstrap",
+    level: "65%"
+  },  {
+    name: "React",
+    level: "40%"
+  }, 
+  //{
+  //   name: "Redux",
+  //   level: "50%"
+  // }, {
+  //   name: "Node",
+  //   level: "20%"
+  // }, {
+  //   name: "Express",
+  //   level: "30%"
+  // }, 
+  {
     name: "MongoDB",
-    level: "70%"
+    level: "50%"
   }, {
     name: "Firebase",
-    level: "60%"
-  }, {
-    name: "Git",
     level: "50%"
-  }, {
-    name: "GitHub",
-    level: "60%"
-  }, {
-    name: "Heroku",
-    level: "50%"
-  }, {
-    name: "Vercel",
-    level: "80%"
-  },]
+  }, 
+  // {
+  //   name: "Git",
+  //   level: "50%"
+  // }, {
+  //   name: "GitHub",
+  //   level: "50%"
+  // },
+  // {
+    //name: "Heroku",
+   // level: "50%"
+ // }, 
+  // {
+  //   name: "Vercel",
+  //   level: "80%"
+  // }
+]
   const talen = [{
     name: "Nederlands",
     level: "100%"
@@ -77,13 +85,17 @@ function About() {
   }]
   const computerprogramma = [{
     name: "Photoshop",
-    level: "60%"
+    level: "70%"
   }, {
     name: "Illustrator",
     level: "45%"
   }, {
     name: "Freehand",
     level: "60%"
+  }
+  , {
+    name: "CANVA",
+    level: "80%"
   }]
   const extra = [
     {
@@ -136,8 +148,10 @@ function About() {
         <p> Een fotograaf nodig tijdens je feestje of foto's nodig van je optreden?
           <br />
           Je weet me wel te vinden dan...
+          <br />
           <img src={duim} alt="duim omhoog, achtergrond flew" height="200px" /> 
           <img src={Eric} alt="gekke foto BBQ" height="200px"/>
+          <br />
          <img src={Eddy} alt="optreden" height="200px" /> 
          <img src={optreden} alt="optreden" height="200px"/>
         </p>
@@ -145,14 +159,11 @@ function About() {
       <h2>Programmeertalen:</h2>
       {skillz.map((skill, index) => (
         <div className='bar' key={index}>
-          <div className="bar-label" style={{ "width": "120px" }} >
+          <div className="bar-containLevel">
+             <div className="bar-label" style={{ "width":  `${skill.level}` }} >
             {skill.name}
           </div>
-          <div className="bar-containLevel">
-            <div className="bar-contain " style={{ "width": `${skill.level}` }}>
-
-            </div>
-            <div className="bar-level">
+                    <div className="bar-level">
               {skill.level}
             </div>
           </div>
@@ -165,13 +176,10 @@ function About() {
       <h2 >Talen:</h2>
       {talen.map((skill, index) => (
         <div className='bar' key={index}>
-          <div className="bar-label" style={{ "width": "120px" }}>
+         <div className="bar-containLevel">    
+          <div className="bar-label" style={{ "width": `${skill.level}`}}>
             {skill.name}
           </div>
-          <div className="bar-containLevel">
-            <div className="bar-contain " style={{ "width": `${skill.level}` }}>
-
-            </div>
             <div className="bar-level">
               {skill.level}
             </div>
@@ -183,13 +191,10 @@ function About() {
       <h2 >Computerprogramma's:</h2>
       {computerprogramma.map((skill, index) => (
         <div className='bar' key={index}>
-          <div className="bar-label" style={{ "width": "110px" }}>
+       <div className="bar-containLevel">   
+         <div className="bar-label" style={{ "width": `${skill.level}` }}>
             {skill.name}
           </div>
-          <div className="bar-containLevel">
-            <div className="bar-contain " style={{ "width": `${skill.level}` }}>
-
-            </div>
             <div className="bar-level">
               {skill.level}
             </div>
@@ -201,13 +206,10 @@ function About() {
       <h2 >Extra's:</h2>
       {extra.map((skill, index) => (
         <div className='bar' key={index}>
-          <div className="bar-label" style={{ "width": "180px" }}>
+         <div className="bar-containLevel" >   
+          <div className="bar-label" style={{ "width":  `${skill.level}` }}>
             {skill.name}
           </div>
-          <div className="bar-containLevel" >
-            <div className="bar-contain " style={{ "width": `${skill.level}` }}>
-
-            </div>
             <div className="bar-level">
               {skill.level}
             </div>

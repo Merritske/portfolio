@@ -30,7 +30,8 @@ function envelopD(){
 
            
      <p>
-Het leven loopt niet voor iedereen van een leien dak. Soms gaat het met vallen en opstaan en op een dag vind je de job van je leven: front-end developer.
+Het leven loopt niet voor iedereen van een leien dak. 
+Soms gaat het met vallen en opstaan en op een dag vind je de job van je leven: front-end developer.
 Het avontuur begint nadat het besef kwam dat een vaste job in het onderwijs geen optie was. Een carrièreswitch is dan de enige weg vooruit. Na een periode van reflectie waar mijn passie voor creëren en uitgedaagd worden telkens terug kwamen als voorwaarde om gelukkig te zijn, startte ik de opleiding front-end development bij INTEC Brussel. 
 </p>
 <p>Importeer “npm i merritske” en je krijgt het volledige package, inclusief empathie en creativiteit om elk project naar een hoger niveau te tillen. 

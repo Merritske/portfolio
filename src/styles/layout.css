@@ -7,20 +7,18 @@
   height: 5.2vw;
   margin: 2vw;
   position: relative;
-  letter-spacing: -1.2vw;
   background-color: rgba(4, 4, 230, 0.2);
   border-radius: 50%;
 }
 .navbar li {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 2.5vw;
+  font-size: 1.3vw;
   font-weight: bold;
   color: rgb(148, 207, 247);
 }
 .navbar li :hover {
   cursor: pointer;
-  letter-spacing: normal;
-  font-size: 1.3vw;
+  font-size: 2.5vw;
 }
 .navbar a:-webkit-any-link {
   text-decoration: none;
@@ -36,50 +34,22 @@
   align-items: center;
 }
 .navbar .dropbal {
-  -webkit-animation-name: dropbal;
-          animation-name: dropbal;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  letter-spacing: normal;
+  animation-name: dropbal;
+  animation-duration: 3s;
+  font-size: 2.5vw;
   transform: translateY(5vw);
   background-color: transparent;
   color: rgb(200, 200, 223);
 }
 .navbar .upbal {
-  -webkit-animation-name: upbal;
-          animation-name: upbal;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-@-webkit-keyframes dropbal {
-  0% {
-    background-color: rgb(221, 221, 236);
-    transform: translateY(0vw);
-    letter-spacing: -1.2vw;
-    color: rgb(148, 207, 247);
-  }
-  30% {
-    background-color: rgba(4, 4, 230, 0.8);
-  }
-  50% {
-    background-color: transparent;
-    color: rgb(0, 0, 150);
-  }
-  90% {
-    letter-spacing: normal;
-  }
-  100% {
-    transform: translateY(5vw);
-    color: rgb(200, 200, 223);
-  }
+  animation-name: upbal;
+  animation-duration: 2s;
 }
 
 @keyframes dropbal {
   0% {
     background-color: rgb(221, 221, 236);
     transform: translateY(0vw);
-    letter-spacing: -1.2vw;
     color: rgb(148, 207, 247);
   }
   30% {
@@ -89,36 +59,19 @@
     background-color: transparent;
     color: rgb(0, 0, 150);
   }
-  90% {
-    letter-spacing: normal;
-  }
   100% {
     transform: translateY(5vw);
     color: rgb(200, 200, 223);
-  }
-}
-@-webkit-keyframes upbal {
-  0% {
-    transform: translateY(5vw);
-    letter-spacing: normal;
-    background-color: transparent;
-    color: rgb(0, 0, 150);
-  }
-  100% {
-    letter-spacing: -1.2vw;
-    background-color: rgb(4, 4, 230);
-    color: rgb(148, 207, 247);
+    font-size: 2.5vw;
   }
 }
 @keyframes upbal {
   0% {
     transform: translateY(5vw);
-    letter-spacing: normal;
     background-color: transparent;
     color: rgb(0, 0, 150);
   }
   100% {
-    letter-spacing: -1.2vw;
     background-color: rgb(4, 4, 230);
     color: rgb(148, 207, 247);
   }
@@ -160,6 +113,6 @@
     border-radius: 50%;
   }
   .navbar li {
-    font-size: 15px;
+    font-size: smaller;
   }
 }/*# sourceMappingURL=layout.css.map */

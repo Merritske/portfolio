@@ -46,7 +46,7 @@ function Home() {
         als een <span className='textcolor'> <i> geheim</i></span> dat zich prijsgeeft. De ochtendzon geeft extra glans en zorgt voor het wauw-gevoel. Dat ene moment, dat je denkt: dat is het. 
         Al de rest hiervoor was maar een preview. <span className='textcolor'> <i>Een moment van opperste geluk</i></span>, ook al duurt het maar een seconde. 
         Zo voel ik me sinds ik kennis gemaakt heb met front-end development.
-        Als de code klopt en er verschijnt iets moois op het scherm, dat is het   wauw gevoel waarvoor ik elke ochtend met plezier uit mijn bed spring.
+        Als de code klopt en er verschijnt iets moois op het scherm, dat is het wauw gevoel waarvoor ik elke ochtend met plezier uit mijn bed spring.
 
       </p>
 <div className="slideshow">

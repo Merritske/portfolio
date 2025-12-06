@@ -24,7 +24,6 @@
   flex-direction: column;
   justify-content: center;
   -webkit-hyphens: auto;
-      -ms-hyphens: auto;
           hyphens: auto;
   word-break: break-word;
   text-transform: uppercase;
@@ -195,7 +194,7 @@
     width: 100%;
     margin-right: 70%;
     position: absolute;
-    top: 0vh;
+    top: 40%;
     z-index: 6;
     padding: 1.2vw;
   }

@@ -27,10 +27,8 @@
   text-align: start;
 }
 .homeContainer .home .introtext .textcolor {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  -webkit-text-decoration-color: rgb(4, 76, 243);
-          text-decoration-color: rgb(4, 76, 243);
+  text-decoration-line: underline;
+  text-decoration-color: rgb(4, 76, 243);
 }
 .homeContainer .home .foto-home {
   -o-object-fit: scale-down;
